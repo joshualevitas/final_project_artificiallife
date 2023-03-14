@@ -116,15 +116,13 @@ I don't know. Further work would include more thourough evolution in new environ
 # Details
 
 
-## Creature Generation
-
-# How I generate creatures
+## How I generate creatures
 First we roll a 10 sided die to choose how many links our creature will have. We generate the torso, and then to creatre
 the rest of the body of the creature, we roll a 3 sided die to choose which direction the next link will face (stemming from the previously added link).
 
 Initially, every joint has a motor in my creatures, and I add a sensor with 1/2 probability.
 
-# How creatures mutate each generation
+## How creatures mutate each generation
 Every child mutates with the following probabilities:
 
     * Remove motor Neuron / Add motor neuron (each with 1/20 probability) 
@@ -133,11 +131,12 @@ Every child mutates with the following probabilities:
     * Add link (1/20)
     * Remove link (1/20)
 
-# Diagrams
+## Diagrams
 
 Creature Generation (body on top, brain on bottom):
-![gen diag](https://github.com/joshualevitas/final_project_artificiallife/blob/main/Graphs/IMG_0125.jpg?raw=true | width = 100)
 
+
+<img src="https://github.com/joshualevitas/final_project_artificiallife/blob/main/Graphs/IMG_0125.jpg?raw=true"  width="600" height="300">
 
 
 
