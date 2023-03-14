@@ -91,6 +91,21 @@ Here, the average increase was about three and half to four points. The Jupiter 
 
 ![Averages on Jupiter](https://github.com/joshualevitas/final_project_artificiallife/blob/main/Graphs/averages_jupiter.png?raw=true)
 
+This graph is the most jarring. Relative to the Jupiter creatures, the other two groups changed *severly*. 
+
+Here are the Jupiter creatures individually:
+
+![Jupiter on jupiter](https://github.com/joshualevitas/final_project_artificiallife/blob/main/Graphs/JupiterInJupiter.png?raw=true)
+
+Very little change. Again, their environment didn't change, so why should they? Luna and Earth creatures, on the other hand:
+
+![luna on jupiter](https://github.com/joshualevitas/final_project_artificiallife/blob/main/Graphs/MoonInJupiter.png?raw=true)
+
+![earth on jupiter](https://github.com/joshualevitas/final_project_artificiallife/blob/main/Graphs/ControlInJupiter.png?raw=true)
+
+Wow! These robots improved drastically. The high gravity posed a significant environmental change that the Luna and Earth robots were well suited to adapt to, and they increased their fitness by about ten points each.
+
+## Conclusions
 
 
 
