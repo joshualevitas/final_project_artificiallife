@@ -53,8 +53,23 @@ Here's how the robots did on average in the control environment:
 
 Each line represents the average fitness creatures initially trained on the specified planet when all were retrained and evaluated on Earth (the control planet). As you can see, the creatures initially trained on Earth did the best on Earth.
 
+All three groups of creatures increased their fitness over the course of their evolution on Earth, but the most staggering improvement was that of the creatures initially trained on the moon, who increased their average fitness by over eight points.
 
-add More
+
+Let's take a closer look at those Moon creatures:
+
+![Luna creatures on earth](https://github.com/joshualevitas/final_project_artificiallife/blob/main/Graphs/MoonInControl.png?raw=true)
+
+
+
+
+
+
+
+
+
+
+
 
 
 Here's how they did on Luna:
