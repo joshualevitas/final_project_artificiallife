@@ -16,6 +16,8 @@ Luna has a gravitational constant of -1.6 m/s. I chose this because it's signifi
 
 Jupiter has a gravitational constant of -24.8m/s. I chose this because it's the strongest gravity in our solar system, and because Luna strayed the opposite extreme relative to earth.
 
+
+
 ### Setup
 
 I trained creatures on each of these planets. I used 5 different seeds (for parallel hill climbers), and evolved each with a population size of 100 for 250 generations each. See their fitnesses below (or watch the video to see them in action):
@@ -34,9 +36,37 @@ Once all these creatures were trained, I put them back in each environment and t
 
 My fitness function was how far they traveled in terms of x-distance.
 
-Here's how the robots did on average:
 
-![Averages on Moon](https://github.com/joshualevitas/final_project_artificiallife/blob/main/Graphs/averages_control.png?raw=true)
+### Hypothesis
+
+I think that the creatures trained on each planet will perform the best when retrained and evaluated on their own planets. However, the performance of the robots trained on the other planets will be harder to predict. I would guess that the creatures initially trained under high gravity (Jupiter) will perform better than those that were trained under low gravity (Luna) since that's what I would expect of humans. A person who has lived their life under high stress is stronger and better suited for most environments than someone who never had to exert much energy to get around since gravity was so low.
+
+I also predict that the creatures initially trained on Luna will tend to "jump" to get around, while creatures on Jupiter will be forced to crawl under the gravitational pull of their planet forcing them toward the ground.
+
+
+### Results
+
+
+Here's how the robots did on average in the control environment:
+
+![Averages on Earth](https://github.com/joshualevitas/final_project_artificiallife/blob/main/Graphs/averages_control.png?raw=true)
+
+Each line represents the average fitness creatures initially trained on the specified planet when all were retrained and evaluated on Earth (the control planet). As you can see, the creatures initially trained on Earth did the best on Earth.
+
+
+add More
+
+
+Here's how they did on Luna:
+
+![Averages on Luna](https://github.com/joshualevitas/final_project_artificiallife/blob/main/Graphs/averages_moon.png?raw=true)
+
+Here, the performance of creatures initially trained on Luna did far better than the rest. However, the increase in fitness of the other two groups was more significant. While the average fitness of creatures initially trained on Luna increased about one to two points, the other two groups average a five to seven point increase!
+
+
+![Averages on Jupiter](https://github.com/joshualevitas/final_project_artificiallife/blob/main/Graphs/averages_jupiter.png?raw=true)
+
+
 
 
 
