@@ -47,7 +47,7 @@ I also predict that the creatures initially trained on Luna will tend to "jump" 
 ### Results
 
 
-Here's how the robots did on average in the control environment:
+#### Here's how the robots did on average in the control environment:
 
 ![Averages on Earth](https://github.com/joshualevitas/final_project_artificiallife/blob/main/Graphs/averages_control.png?raw=true)
 
@@ -60,24 +60,34 @@ Let's take a closer look at those Moon creatures:
 
 ![Luna creatures on earth](https://github.com/joshualevitas/final_project_artificiallife/blob/main/Graphs/MoonInControl.png?raw=true)
 
+We see a pretty wide range of starting fitnesses, and all of them improved similarly. However, when we look at how the individual Jupiter creatures did on earth, we don't find the same thing:
+
+![Jupiter creatures on earth](https://github.com/joshualevitas/final_project_artificiallife/blob/main/Graphs/JupiterInControl.png?raw=true)
+
+Here, two of the creatures improved quite a bit, but two of them barely improved, and one didn't improve at all!
 
 
 
 
 
-
-
-
-
-
-
-
-Here's how they did on Luna:
+#### Here's how the creatures did, on average, on Luna:
 
 ![Averages on Luna](https://github.com/joshualevitas/final_project_artificiallife/blob/main/Graphs/averages_moon.png?raw=true)
 
 Here, the performance of creatures initially trained on Luna did far better than the rest. However, the increase in fitness of the other two groups was more significant. While the average fitness of creatures initially trained on Luna increased about one to two points, the other two groups average a five to seven point increase!
 
+Let's first look at the Luna creatures individually:
+![Luna on luna](https://github.com/joshualevitas/final_project_artificiallife/blob/main/Graphs/MoonInMoon.png?raw=true)
+
+There's not much improvement here at all. I suppose this makes sense, given that they had a lot of time to improve when they evolved initially, but very little time (relatively) when they were placed again on Luna. The environment hadn't changed, so why should they?
+
+How about the creatures from Jupiter?
+![Jupiter on luna](https://github.com/joshualevitas/final_project_artificiallife/blob/main/Graphs/JupiterInMoon.png?raw=true)
+
+Here, the average increase was about three and half to four points. The Jupiter bots experienced the most "shock", in that their environments had changed the most. It makes sense that this would cause them to change more (relative to the Luna creatures).
+
+
+#### Here's how creatures did, on average, on Jupiter:
 
 ![Averages on Jupiter](https://github.com/joshualevitas/final_project_artificiallife/blob/main/Graphs/averages_jupiter.png?raw=true)
 
