@@ -136,7 +136,7 @@ Every child mutates with the following probabilities:
 Creature Generation (body on top, brain on bottom):
 
 
-<img src="https://github.com/joshualevitas/final_project_artificiallife/blob/main/Graphs/IMG_0125.jpg?raw=true"  width="600" height="300">
+<img src="https://github.com/joshualevitas/final_project_artificiallife/blob/main/Graphs/IMG_0125.jpg?raw=true"  width="600" height="800">
 
 
 
