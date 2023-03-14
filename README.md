@@ -107,26 +107,25 @@ Wow! These robots improved drastically. The high gravity posed a significant env
 
 ## Conclusions
 
+My hypothesis that creatures trained on each planet would perform the best when placed on the same planet held true for both Luna and Earth. However, it failed for Jupiter. When the three groups were placed on Jupiter to further evolve, the robots from Jupiter began with the highest fitness, but soon were surpassed by both the group of robots from Earth and those from Luna.
+
+What does this mean? Training robots in high gravity environments leads to poor performance in other environments? Training robots in low gravity environments makes them more adaptable in higher ones?
+
+I don't know. Further work would include more thourough evolution in new environments (increasing the number of geenrations and population size), as well as trying out different gravitational constants. I only tried three. Perhaps training them on a more continous scale (or, at least, a discrete scale more closely resembling a continous one) would yield more interesting and conclusive results.
+
+# Details
 
 
+## Creature Generation
 
-
-
-
-
-
-
-
-Creature Generation
-======================
-These creatures are randomly generated with the following parameters: 
-  - Number of Boxes: 2 - 11 
-  - Probability of floating joint: 10% 
-  - Probability of Sensor: 50% 
-  - Probability of Motor: 100% 
-  - Height: 0.01 - 1.01 
-  - Depth: 0.01 - 1.01 
-  - Width: 0.01 - 2.01 
+Each creature was randomly generated with the following parameters: 
+  - 2 to 11 links
+  - Pr[floating joint]: 10% 
+  - Pr[Sensor Neuron]: 50% 
+  - Pr[Motor Neuron]: 100% 
+  - Link height: 0.01 - 1.01 
+  - Link depth: 0.01 - 1.01 
+  - Link width: 0.01 - 2.01 
 
 They can branch to the left, towards the viewer, or upwards. The program does not currently keep track of all possible
 branching points, so the creature only branches off the most recent branch. 
@@ -144,7 +143,7 @@ the complexity and often created worse results instead of better.
 
 Creature Generation Diagram
 ==========================
-![Creature Generation](https://github.com/austin-py/ArtificialLife/blob/1287086658b21dccd191fafcf91148e8217c4194/creature_gen_diagram.jpg)
+
 
 
 Creature Mutation
