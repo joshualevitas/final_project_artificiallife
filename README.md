@@ -138,55 +138,37 @@ Creature Generation (body on top, brain on bottom):
 
 <img src="https://github.com/joshualevitas/final_project_artificiallife/blob/main/Graphs/IMG_0125.jpg?raw=true"  width="600" height="800">
 
+Creature Mutation:
+
+<img src="https://github.com/joshualevitas/final_project_artificiallife/blob/main/Graphs/IMG_0126.jpg?raw=true"  width="600" height="800">
 
 
-Creature Generation Diagram
-==========================
+# Running the code
+
+Just open main and run it. It'll ask you what you want to do in the terminal.
+
+Important notes: 
+- Option 1 is going to take a really long time. It's training everything from scratch. I've picked the initial creatures so you don't need to do this.
+- Option 2 is the better choice: it'll train each creature from each environment  -- in each environment again and generate graphs in the "Graphs" folder with details about fitness.
+- No matter what you choose: YOU MUST CHANGE THE GRAVITATIONAL CONSTANT IN LINE 33 OF CLASSES/SIMULATION.PY to either -1.62, -9.8, or -24.79, depending on where you want to test the creatures.
 
 
+# Videos
 
-   
-Creature Mutation Diagram
-=========================
-![Creature Mutation](https://github.com/austin-py/ArtificialLife/blob/1287086658b21dccd191fafcf91148e8217c4194/creature_mutation.jpg)
-
-
-Selection:
-==========
-Selection algorithm was varried, as detailed in the experimental results below. However the fitness measure remained the same. Namely how far the creature could travel from the origin in any direction. 
-
-Experimentation:
-=======================
-For the purpose of experimentation, 420,000 simulations were run. The full writeup of the results and more details can be found [Here](https://github.com/austin-py/ArtificialLife/blob/final-project/Final_Writeup.md)
-
-
-TO RUN: 
-===================
-Simply run "python3 main.py" and it will simulate 5 hill climbers which each have 10 members of population for 10 generations. Only the best from each hill climber run is shown visually, and only when show=True in main.py. The fitness values of the creatures will be saved in the whatever file the variable "FILE NAME" points to within the Data folder.
-
-You are also able to comment out lines 9-14, and uncomment lines 16-18 to simulate one robot that was the result of evolution.
-
-Viewing can be slowed down by adjusting the sleep time in constants. 
-
-
-Documentation:
-==============
-To view a 10 teaser gif: https://youtu.be/STcML44qikA  <br>
-To view a summary video of the work:  https://youtu.be/rgEhXUmA4ew <br>
-Bloopers: https://youtu.be/1omTaGXlKPc <br>
-To view one creature in both an evolved and random state: https://youtu.be/_wVzwvb8V4w <br>
-To view an evolutionary run of one creature (every 50 generations is shown): https://youtu.be/Oq9HjgO-8LM <br>
+Full video: https://youtu.be/we4OE9_gll8
+Teaser video: https://youtu.be/5fZf374dGNI
 
 
 
-Citations:
-===========
+
+
+# Citations
 
 Credit to /r/ludobots and pyrosim. All of my work is on top of these two sources, and relies heavily on the work of these two sources in order to try to learn something new. 
 
 Also to Karl Sims and Sam Kriegman and his Artifical Life Class.
 
-
+Huge credit to Austin Porras. My assignment 8 took *forever* to train anything and wasn't where I'd hoped it be. I was able to build my final project on top of Austin's assignment 8 -- particarly using his random solutions to train my initial robots. Once I had my robots trained initially, I was able to focus on building my experiments.
 
 
 
