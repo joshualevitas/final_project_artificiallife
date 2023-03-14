@@ -118,27 +118,27 @@ I don't know. Further work would include more thourough evolution in new environ
 
 ## Creature Generation
 
-Each creature was randomly generated with the following parameters: 
-  - 2 to 11 links
-  - Pr[floating joint]: 10% 
-  - Pr[Sensor Neuron]: 50% 
-  - Pr[Motor Neuron]: 100% 
-  - Link height: 0.01 - 1.01 
-  - Link depth: 0.01 - 1.01 
-  - Link width: 0.01 - 2.01 
+# How I generate creatures
+First we roll a 10 sided die to choose how many links our creature will have. We generate the torso, and then to creatre
+the rest of the body of the creature, we roll a 3 sided die to choose which direction the next link will face (stemming from the previously added link).
 
-They can branch to the left, towards the viewer, or upwards. The program does not currently keep track of all possible
-branching points, so the creature only branches off the most recent branch. 
+Initially, every joint has a motor in my creatures, and I add a sensor with 1/2 probability.
 
-The bodies are generated with a large looping process that, after determining the number of boxes total, loops through
-creating specifics for each bpx. The choice of which direction to branch is determined by a random number generator (1
-means to left, 2 towards viewer, 3 upwards). The height, depth, width, whether there is a sensor, and the type of 
-joint are also all generated with random number generators given the parameters above. 
+# How creatures mutate each generation
+Every child mutates with the following probabilities:
 
-As noted above, all joints have motors to begin with. All sensors are also connected to all motors right now, with the 
-brain being created after the physical body is created. I did mess around with random motor assignment, and a small 
-amount with mapping the body so that motors would only be connected to sensors near them, but I found that it increased 
-the complexity and often created worse results instead of better. 
+    * Remove motor Neuron / Add motor neuron (each with 1/20 probability) 
+    * Change neuron weight (3/4)
+    * Add / Remove sensor neuron (1/5)
+    * Add link (1/20)
+    * Remove link (1/20)
+
+# Diagrams
+
+Creature Generation (body on top, brain on bottom):
+![gen diag](https://github.com/joshualevitas/final_project_artificiallife/blob/main/Graphs/IMG_0125.jpg?raw=true | width = 100)
+
+
 
 
 Creature Generation Diagram
@@ -146,21 +146,6 @@ Creature Generation Diagram
 
 
 
-Creature Mutation
-======================
-  The creatures are randomly mutated every generation with the following probabilities:
-  - Change Motor Weight (70%)
-  - Add Motor Neuron (5%)
-  - Remove Motor Neuron (5%)
-  - Add Link (2%)
-  - Remove Link (3%)
-  - Mutate Body (15%)
-      Subdivides into the following mutations:
-        -Add Sensor Neuron 
-        -Remove Sensor Neuron
-        -Change Joint Axis
-      These are chosen based on what piece of the body is randomly selected, and as such cannot be assigned probabilities. 
-  
    
 Creature Mutation Diagram
 =========================
@@ -197,15 +182,15 @@ To view an evolutionary run of one creature (every 50 generations is shown): htt
 
 Citations:
 ===========
-Note: This work builds extensively off of the work of Karl Sims, r/ludobots, and the pyrosim library. Without this prior work none of this would have been possible, esspecially without the guidance of the pyrosim documentation and the helpful people over at r/ludobots who teach a great lesson on the basics.
 
-Additionally, some ideas were crowdsourced from the class campuswire page. Specifically I got ideas from the class page about how to re-generate bodies. 
+Credit to /r/ludobots and pyrosim. All of my work is on top of these two sources, and relies heavily on the work of these two sources in order to try to learn something new. 
 
-Ideas and inspiration from Comp-Sci 396 Artificial Life at Northwestern University with Sam Kriegman teaching. 
-
+Also to Karl Sims and Sam Kriegman and his Artifical Life Class.
 
 
-Older Graphs of some fitness plots:
-==================================
-![Five Fitness Plots](https://github.com/austin-py/ArtificialLife/blob/39d9d5bc3599a9c651ec6e205fc7436c8247c498/Fitness_Graph1.png)
-![Many Fitness Plots](https://github.com/austin-py/ArtificialLife/blob/39d9d5bc3599a9c651ec6e205fc7436c8247c498/Fitness_Graph2.png)
+
+
+
+
+
+
